@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,35 +8,84 @@
   <title>EnglishLife - Inglês Simplificado</title>
   <meta name="description" content="Nosso ensino é completo e totalmente criado do zero, pratique e estude em qualquer lugar e a qualquer hora. Venha fazer parte da EnglishLife.">
 
-  <link rel="preload" href="./css/style.css" as="style">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preload" href="./css/stylelink.css" as="stylelink">
+  <link rel="stylesheet" href="./css/stylelink.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
   <header class="header-bg">
-    <div class="header">
+    <div class="header container">
       <!-- Logo á esquerda -->
-    <a href="./">
-      <img src="./img/marca.svg" alt="EnglishLife">
-    </a>
+      <a href="./">
+        <img src="./img/marca.svg" alt="EnglishLife">
+      </a>
 
-    <!-- menu central -->
-    <nav aria-label="primária" class="header-menu-main">
-      <ul class="header-menu">
-        <li><a href="#curso">Curso</a></li>
-        <li><a href="#metodo">Método</a></li>
-        <li><a href="#sobre">Sobre Nós</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
+      <!-- menu central -->
+      <nav aria-label="primária" class="header-menu-main">
+        <ul class="header-menu">
+          <li><a href="#curso">Curso</a></li>
+          <li><a href="#metodo">Método</a></li>
+          <li><a href="#sobre">Sobre Nós</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
       <!-- menu á direita -->
       <ul class="header-menu-right">
-        <li><a href="/"  class="aluno">Aluno</a></li>
+        <li><a href="/" class="aluno">Aluno</a></li>
         <li><a href="#matricular" class="matricular">Matricule-se</a></li>
       </ul>
-    
-  </div>
+
+    </div>
   </header>
-  
+
+  <main>
+    <div class="introducao container">
+      <div class="introducao-conteudo">
+        <h1 class="cor-11">Inglês simplificado e completo<span class="cor">.</span></h1>
+        <p class="cor-7">Nosso ensino é completo e totalmente criado do zero, pratique e estude em qualquer lugar e a qualquer hora. Venha fazer parte da EnglishLife.</p>
+        <a class="botao">Matricule-se</a>
+      </div>
+
+      <img src="./img/fotos/imagem-header.jpg" alt="Imagem do header">
+    </div>
+  </main>
+
+  <article>
+    <div class="tecnologia container">
+      <div class="tecnologia-texto">
+        <h2 class="cor-11">Metodologia comprovada<span class="cor-p1">.</span></h2>
+        <p class="cor-7">Na EnglishLife, a nossa metodologia é comprovada e tecnológica, tornando nossos milhares de alunos proficientes em inglês de verdade.</p>
+      </div>
+      <div class="tecnologia-numeros">
+        <ul class="numeros">
+          <li>
+            <span>+40mil</span>
+            Alunos satisfeitos e fluentes.
+          </li>
+          <li>
+            <span>+1400</span>
+            Aulas atuais e disponíveis para download.
+          </li>
+          <li>
+            <span>+20</span>
+            Tecnologias utilizadas nas aulas.
+          </li>
+        </ul>
+      </div>
+      <div class="tecnologia-img">
+      <img src="./img/svgs/img-curso.svg" alt="">
+    </div>
+    </div>
+  </article>
+
 </body>
+
 </html>

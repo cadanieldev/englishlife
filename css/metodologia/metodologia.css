@@ -1,0 +1,154 @@
+.tecnologia {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+}
+
+.tecnologia h2 {
+  font-size: 4rem;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.tecnologia p {
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.125;
+}
+
+.tecnologia-texto {
+  padding-top: 160px;
+  padding-bottom: 80px;
+}
+
+.tecnologia-numeros {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.numeros {
+  display: flex;
+  gap: 80px;
+  padding: 0;
+  margin: 0;
+}
+
+.numeros li {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  max-width: 130px; 
+  word-wrap: break-word; 
+  position: relative;
+}
+
+.numeros li span {
+  font-size: 2rem; 
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--cor-11); 
+}
+
+.numeros li {
+  font-size: 1rem; 
+  color: var(--cor-7); 
+  line-height: 1.4;
+}
+
+.numeros li:before {
+  content: ""; 
+  display: block;
+  width: 20px; 
+  height: 4px; 
+  background-color: var(--cor-p1); 
+  position: absolute; 
+  top: 50%; 
+  left: -30px; 
+  transform: translateY(-50%); 
+}
+
+.tecnologia-img {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tecnologia-img img {
+ margin-right: 150px;
+}
+
+@media (max-width: 1000px) {
+  .tecnologia-img img {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .tecnologia h2 {
+    font-size: 3rem;
+  }
+  .numeros {
+    gap: 40px;
+  }
+  .tecnologia-texto {
+    padding-top: 100px;
+  }
+}
+
+@media (max-width: 650px) {
+  .tecnologia h2 {
+    font-size: 2rem;
+  }
+  .tecnologia p {
+    font-size: 1rem;
+  }
+  .tecnologia-texto {
+    padding-bottom: 40px;
+  }
+  .tecnologia-img {
+    margin-top: 40px;
+  }
+  .numeros li span {
+    font-size: 1.5rem;
+  }
+  .numeros li:before {
+    content: ""; 
+    display: block;
+    width: 20px; 
+    height: 4px; 
+    background-color: var(--cor-p1); 
+    position: absolute; 
+    top: 45%; 
+    left: -30px; 
+    transform: translateY(-50%); 
+  }
+  .tecnologia-texto {
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 550px) {
+  .numeros li:before {
+    display: none;
+  }
+  .tecnologia h2 {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 420px) {
+  .tecnologia h2 {
+    font-size: 2rem;
+    line-height: 1.125;
+  }
+  .numeros li  {
+    font-size: 0.9rem;
+  }
+}
