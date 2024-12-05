@@ -1,0 +1,143 @@
+.metodo-bg {
+  background-color: var(--cor-p1);
+  color: var(--cor-0);
+}
+
+.metodo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+
+.metodo-imagem img {
+  width: 100%;
+  height: 50rem;
+  object-fit: cover;
+  margin-top: 80px;
+  border-radius: 4px;
+}
+
+.metodo-inicio {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.metodo-inicio  > span {
+  display: block;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: var(--cor-4);
+}
+
+.metodo-inicio h2 {
+  font-family: "Fira Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  font-weight: 600;
+  font-size: 4rem;
+  line-height: 1.125;
+}
+
+.metodo-inicio > p {
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.125;
+}
+
+.metodo-inicio h2 {
+  margin-bottom: 32px;
+}
+
+.metodo-inicio > p {
+  margin-bottom: 20px;
+}
+
+.metodo-inicio a {
+  margin-bottom: 80px;
+  display: inline-block;
+  font: 600 1.5rem/1.5 "Fira Sans", sans-serif;
+  text-transform: uppercase;
+  color: var(--cor-0);
+}
+
+.metodo-vantagens {
+  display: flex;
+  gap: 40px;
+}
+
+.metodo-vantagens h3 {
+  font-size: 1.5rem;
+  line-height: 1.125;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 600;
+}
+
+.metodo-vantagens p {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: var(--cor-5);
+}
+
+.metodo-vantagens h3 {
+  margin-bottom: 8px;
+  width: max-content;
+}
+
+.metodo-vantagens img {
+  width: 32px;
+  margin-bottom: 4px;
+}
+
+@media (max-width: 1000px) {
+  .metodo {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .metodo-inicio {
+    padding-top: 60px;
+    padding-bottom: 0;
+  }
+  .metodo-inicio a {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 800px) {
+  .metodo-imagem img {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .metodo-vantagens {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .metodo-inicio h2 {
+    font-size: 3rem;
+  }
+  .metodo-inicio p {
+    font-size: 1rem;
+  }
+  .metodo-inicio a {
+    margin-bottom: 30px;
+  }
+  .metodo-vantagens h3 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .metodo-inicio h2 {
+    font-size: 2rem;
+  }
+}
