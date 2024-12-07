@@ -8,8 +8,13 @@
   <title>EnglishLife - Inglês Simplificado</title>
   <meta name="description" content="Nosso ensino é completo e totalmente criado do zero, pratique e estude em qualquer lugar e a qualquer hora. Venha fazer parte da EnglishLife.">
 
-  <link rel="preload" href="./css/stylelink.css" as="style">
-  <link rel="stylesheet" href="./css/stylelink.css">
+  <link rel="icon" href="./img/marca.svg" type="image/svg+xml">
+  <link rel="preload" href="./css/style.min.css" as="style">
+  <link rel="stylesheet" href="./css/style.min.css">
+
+  <script>
+    document.documentElement.classList.add("js")
+  </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +30,7 @@
     <div class="header container">
       <!-- Logo á esquerda -->
       <a href="./">
-        <img src="./img/marca.svg" alt="EnglishLife">
+        <img src="./img/marca.svg" alt="EnglishLife" width="159" height="42">
       </a>
 
       <!-- menu central -->
@@ -49,12 +54,13 @@
   <main>
     <div class="introducao container">
       <div class="introducao-conteudo">
-        <h1 class="cor-11">Inglês simplificado e completo<span class="cor">.</span></h1>
-        <p class="cor-7">Nosso ensino é completo e totalmente criado do zero, pratique e estude em qualquer lugar e a qualquer hora. Venha fazer parte da EnglishLife.</p>
-        <a class="botao">Matricule-se</a>
+        <h1 class="cor-11 fadeInDown" data-anime="200">Inglês simplificado e completo<span class="cor">.</span></h1>
+        <p class="cor-7 fadeInDown" data-anime="400">Nosso ensino é completo e totalmente criado do zero, pratique e estude em qualquer lugar e a qualquer hora. Venha fazer parte da EnglishLife.</p>
+        <a class="botao fadeInDown" data-anime="600">Matricule-se</a>
       </div>
-
-      <img src="./img/fotos/imagem-header.jpg" alt="Imagem do header">
+      <picture data-anime="800" class="fadeInDown">
+        <img src="./img/fotos/imagem-header.jpg" width="2755" height="3665"="Imagem do header">
+      </picture>
     </div>
   </main>
 
@@ -81,7 +87,7 @@
         </ul>
       </div>
       <div class="tecnologia-img">
-        <img src="./img/svgs/img-curso.svg" alt="">
+        <img src="./img/svgs/img-curso.svg" alt="Imagem ilustrativa" width="822" height="579">
       </div>
     </div>
   </article>
@@ -95,20 +101,20 @@
         <a class="matricular" href="/">Matricule-se</a>
         <div class="metodo-vantagens">
           <div>
-            <img src="./img/svgs/leitura.svg" alt="Icone de um Livro">
+            <img src="./img/svgs/leitura.svg" alt="Icone de um Livro" width="24" height="24">
             <h3>Leitura Inteligente</h3>
             <p>
               No curso da EnlighLife, temos a nova tecnologia de leitura inteligente, possibilitando uma leitura mais eficiente e de fácil compreensão.
             </p>
           </div>
           <div>
-            <img src="./img/svgs/escutar.svg" alt="Icone de um Livro">
+            <img src="./img/svgs/escutar.svg" alt="Icone de um Livro" width="24" height="24">
             <h3>Modo Escuta</h3>
             <p>
               Desenvolvemos o modo Escuta PRO, no qual todo o material de escuta é reproduzido por texto também, facilitando a imersão. </p>
           </div>
           <div>
-            <img src="./img/svgs/falar.svg" alt="Icone de um Livro">
+            <img src="./img/svgs/falar.svg" alt="Icone de um Livro" width="24" height="24">
             <h3>Speaking Now</h3>
             <p>
               No Speaking Now, cada lição é feito uma bateria de 10 minutos de apenas fala, sendo uma tarefa divertida e muito importante para a sua pronúncia. </p>
@@ -117,7 +123,7 @@
       </div>
 
       <div class="metodo-imagem">
-        <img src="./img/fotos/foto-curso.jpg" alt="">
+        <img src="./img/fotos/foto-curso.jpg" alt="" width="5184" height="3456">
       </div>
     </div>
   </article>
@@ -127,20 +133,24 @@
 
     <dl>
       <div>
-        <button>O curso de inglês da EnligshLife é bom?</button>
-        <dd>O nosso curso foi reconhecido internacionalmente como essencial com diversas avaliações positivas, você também pode ver abaixo a experiência de alguns dos nossos alunos.</dd>
+        <dt><button aria-controls="pergunta1" aria-expanded="true">O curso de inglês da EnligshLife é bom?</button></dt>
+        <dd id="pergunta1" class="ativa">O nosso curso foi reconhecido internacionalmente como essencial com diversas avaliações positivas, você também pode ver abaixo a experiência de alguns dos nossos alunos.</dd>
       </div>
       <div>
-        <button>Como posso entrar em contato?</button>
+        <button aria-controls="pergunta2" aria-expanded="false">Como posso entrar em contato?</button>
+        <dd id="pergunta2">O nosso curso foi reconhecido internacionalmente como essencial com diversas avaliações positivas, você também pode ver abaixo a experiência de alguns dos nossos alunos.</dd>
       </div>
       <div>
-        <button>vocês possuem algum desconto?</button>
+        <button aria-controls="pergunta3" aria-expanded="false">Vocês possuem algum desconto?</button>
+        <dd id="pergunta3">O nosso curso foi reconhecido internacionalmente como essencial com diversas avaliações positivas, você também pode ver abaixo a experiência de alguns dos nossos alunos.</dd>
       </div>
       <div>
-        <button>Qual a metodologia?</button>
+        <button aria-controls="pergunta4" aria-expanded="false">Qual a metodologia?</button>
+        <dd id="pergunta4">O nosso curso foi reconhecido internacionalmente como essencial com diversas avaliações positivas, você também pode ver abaixo a experiência de alguns dos nossos alunos.</dd>
       </div>
       <div>
-        <button>Qual a duração do curso?</button>
+        <button aria-controls="pergunta5" aria-expanded="false">Qual a duração do curso?</button>
+        <dd id="pergunta5">O nosso curso foi reconhecido internacionalmente como essencial com diversas avaliações positivas, você também pode ver abaixo a experiência de alguns dos nossos alunos.</dd>
       </div>
     </dl>
   </article>
@@ -153,19 +163,19 @@
         <h3 class="nome">Carlos Daniel</h3>
         <p class="aluno">Aluno da EnglishLife</p>
         <p class="review">“Estudar na EnglishLife foi a melhor escolha da minha vida. Os professores e as aulas preparadas são excelentes, além de divertidas são muito imersivas, pude aprender o que não aprendia em milhares de outros cursos, estou muito satisfeito.” </p>
-        <img src="./img/svgs/estrelinhas.svg" alt="">
+        <img src="./img/svgs/estrelinhas.svg" alt="" width="90" height="11">
       </div>
       <div class="avaliacao">
         <h3 class="nome">Samira Alves</h3>
         <p class="aluno">Aluna da EnglishLife</p>
         <p class="review">“Estudar na EnglishLife foi a melhor escolha da minha vida. Os professores e as aulas preparadas são excelentes, além de divertidas são muito imersivas, pude aprender o que não aprendia em milhares de outros cursos, estou muito satisfeito.” </p>
-        <img src="./img/svgs/estrelinhas.svg" alt="">
+        <img src="./img/svgs/estrelinhas.svg" alt="" width="90" height="11">
       </div>
       <div class="avaliacao">
         <h3 class="nome">Rebeca Andrade</h3>
         <p class="aluno">Aluno da EnglishLife</p>
         <p class="review">“Estudar na EnglishLife foi a melhor escolha da minha vida. Os professores e as aulas preparadas são excelentes, além de divertidas são muito imersivas, pude aprender o que não aprendia em milhares de outros cursos, estou muito satisfeito.” </p>
-        <img src="./img/svgs/estrelinhas.svg" alt="">
+        <img src="./img/svgs/estrelinhas.svg" alt="" width="90" height="11">
       </div>
     </div>
   </article>
@@ -225,21 +235,21 @@
           </div>
         </form>
       </div>
-      <img src="./img/svgs/form.svg" alt="">
+      <img src="./img/svgs/form.svg" alt="" width="884" height="724">
     </div>
 
   </section>
 
   <footer class="footer-bg" id="contato">
     <div class="footer container">
-      <img src="./img/marca.svg"alt="EnglishLife">
+      <img src="./img/marca.svg" alt="EnglishLife" width="159" height="42">
       <div class="footer-contato">
         <h3 class="cor-0">Contato</h3>
         <ul class="cor-5">
           <li><a href="tel:+552199999999">+55 11 99999-9999</a></li>
           <li><a href="mailto:contato@englishlife.com">contato@englishlife.com</a></li>
           <li>Rua Fictícia, 55 - São Paulo</li>
-          <li>São Paulo  - SP</li>
+          <li>São Paulo - SP</li>
         </ul>
 
         <div class="footer-redes">
@@ -269,6 +279,9 @@
       <p class="footer-copy font-2-m cor-6">EnglishLife © Alguns direitos reservados.</p>
     </div>
   </footer>
+
+  <script src="./js/plugins/simple-anime.js"></script>
+  <script src="./js/script.js"></script>
 
 </body>
 
