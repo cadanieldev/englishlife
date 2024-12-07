@@ -55,7 +55,7 @@
 }
 
 
-.aluno:before{
+.login:before{
   content: "";
   background-image: url("../../img/icones-menu/alunonovo.svg");
   background-size: contain;

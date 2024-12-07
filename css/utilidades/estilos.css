@@ -14,6 +14,16 @@
   cursor: pointer;
 }
 
+.botao:hover {
+  background: #F86B72;
+}
+
+.termos {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
 .cor {
   color: #ca1f27;
 }
