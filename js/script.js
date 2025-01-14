@@ -22,3 +22,23 @@ perguntas.forEach(eventosPerguntas);
 if (window.SimpleAnime) {
   new SimpleAnime();
 }
+
+// Animação link Interno
+
+function initLinkInterno() {
+  const linksInternos = document.querySelectorAll(".js-menu a[href^='#']");
+  function scrollToArticle(event) {
+    event.preventDefault();
+    const href = event.currentTarget.getAttribute("href");
+    const article = document.querySelector(href);
+    article.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }
+
+  linksInternos.forEach((link) => {
+    link.addEventListener("click", scrollToArticle);
+  });
+}
+initLinkInterno();
